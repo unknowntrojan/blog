@@ -1,0 +1,32 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: "unknown's blog"
+description: "RE, Rust & Infosec"
+author: "unknowntrojan"
+url: "https://unknowntrojan.win"
+
+socials:
+  - name: GitHub
+    icon: fa-brands fa-github
+    user: unknowntrojan
+    link: https://github.com/unknowntrojan
+    
+  - name: Steam
+    icon: fa-brands fa-steam
+    user: unknowntrojan
+    link: https://steamcommunity.com/id/unknowntrojan
+
+  - name: Discord
+    icon: fa-brands fa-discord
+    user: unknowntrojan
+  
+  - name: Feed
+    icon: fa-solid fa-rss
+    user: atom feed
+    link: feed://unknowntrojan.win/feed.xml
+
+domain: "unknowntrojan.win"

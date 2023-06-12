@@ -1,0 +1,35 @@
+<header class="bg-zinc-700 p-2 grid grid-flow-row grid-cols-3 nav-bar">
+  <a href="{{ '/' | relative_url }}">
+    <div class="flex flex-row flex-grow flex-shrink">
+      <img
+        src="{{ '/images/avatar.png' | relative_url }}"
+        alt="Logo"
+        class="w-16 h-16 aspect-square rounded-full mr-4 overflow-hidden" />
+
+      <div class="float-left text-left my-auto">
+        <h2>
+          {{ metadata.title }}
+        </h2>
+        <h3>
+          {{ metadata.description }}
+        </h3>
+      </div>
+    </div>
+  </a>
+
+  <nav class="justify-center items-center my-auto mx-auto bg-zinc-900 p-2">
+    <ul class="flex text-l">
+      <li class="mx-4 block">
+        <a class="hover:text-gray-400" href="{{ '/' | relative_url }}">Home</a>
+      </li>
+      <li class="mx-4 block">
+        <a class="hover:text-gray-400" href="{{ '/posts' | relative_url }}">Posts</a>
+      </li>
+      <li class="mx-4 block">
+        <a class="hover:text-gray-400" href="{{ '/about' | relative_url }}">About</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div></div>
+</header>

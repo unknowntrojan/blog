@@ -1,0 +1,22 @@
+<footer class="mb-4 align-bottom text-center footer">
+  <div class="mb-4">
+    <br/>
+    Socials
+  </div>
+  <div class="flex flex-row items-center center mb-8 mx-auto justify-center">
+    {% for social in metadata.socials %}
+      <div class="p-4 bg-zinc-900">
+        {% if social.link %}
+          <a href="{{ social.link }}">
+          {% endif %}
+          <div class="text-center bg-zinc-900 leading-4 {% if social.link %}hover:text-gray-400{% endif %}">
+            <i class="{{ social.icon }}"></i>
+            {{ social.user }}
+          </div>
+          {% if social.link %}
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</footer>
