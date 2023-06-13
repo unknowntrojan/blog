@@ -13,4 +13,4 @@ If I find something interesting to write about, you'll find it here.
 
 If you want to know more about me, visit [About](about).
 
-<h1 class="text-center">Under Construction</h1>
+<h1 class="text-center mb-0">Under Construction</h1>
