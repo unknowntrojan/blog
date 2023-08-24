@@ -5,16 +5,18 @@
   </head>
   <body class="{{ data.layout }} {{ data.page_class }}">
     <div class="flex flex-col h-full justify-between">
-      {% render "navbar", metadata: site.metadata, resource: resource %}
+      <div class="top-0 sticky z-50">
+	  	{% render "navbar", metadata: site.metadata, resource: resource %}
+	  </div>
 
-      <div class="flex flex-row mt-16 mb-auto w-5/6 mx-auto">
-        <div class="{% if data.toc %}toc-div {% else %} mt-0 p-4 {% endif %} mb-auto w-1/4">
+      <div class="flex flex-row mt-16 w-5/6 mx-auto">
+        <div class="{% if data.toc %}toc-div sticky top-20 self-start {% else %} mt-0 p-4 {% endif %} w-1/4">
           {% if data.toc %}
             <h1>Contents</h1>
             {{ content | toc_only }}
           {% endif %}
         </div>
-        <main class="p-8 mt-0 w-4/5">
+        <main class="p-8 mt-0 mb-8 w-4/5">
           {{ content }}
         </main>
 

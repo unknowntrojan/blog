@@ -11,6 +11,6 @@ As a kid I was fascinated by Computers. So I got into programming as early as I 
 
 Around 2016 I started to get into gamehacking. There's something about the instant feedback loop of trying to break a game and seeing what happens. Trying to find things that would make me and my friends laugh was always a rewarding experience.
 
-RE is an integral part of gamehacking, so I started learning it around this time. I also got into CTFs around this time.
+RE is an integral part of gamehacking, so I started learning it around this time. I also got into CTFs as well.
 
-Be sure to have a look around and see what you like!
+Have a look around and see what you like!

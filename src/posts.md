@@ -28,7 +28,7 @@ title: Posts
 			</div>
 			<div>
 				<p class="text-gray-400 text-sm mb-0 line-clamp-4">
-					{{ post.summary | strip_html }}
+					{{ post.summarytext | strip_html }}
 				</p>
 			</div>
 		</div>

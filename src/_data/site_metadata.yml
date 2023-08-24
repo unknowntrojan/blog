@@ -23,6 +23,11 @@ socials:
   - name: Discord
     icon: fa-brands fa-discord
     user: unknowntrojan
+
+  - name: Matrix
+    icon_url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg
+    user: unknowntrojan
+    link: https://matrix.to/#/@unknowntrojan:unknowntrojan.win
   
   - name: Feed
     icon: fa-solid fa-rss
