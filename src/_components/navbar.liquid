@@ -1,5 +1,5 @@
-<header class="p-2 grid grid-flow-row grid-cols-3 nav-bar">
-  <a href="{{ '/' | relative_url }}">
+<header class="p-2 md:grid md:grid-flow-row md:grid-cols-3 nav-bar">
+  <a href="{{ '/' | relative_url }}" class="hidden md:inline-block">
     <div class="flex flex-row flex-grow flex-shrink">
       <img
         src="{{ '/images/avatar.png' | relative_url }}"
@@ -17,19 +17,17 @@
     </div>
   </a>
 
-  <nav class="justify-center items-center my-auto mx-auto bg-zinc-900 p-2">
-    <ul class="flex text-l">
-      <li class="mx-4 block">
+  <nav class="justify-center items-center my-auto bg-zinc-900 p-2 mx-auto">
+    <div class="flex flex-row flex-none justify-center text-l mx-4 shrink">
+      <div class="mx-4 block">
         <a class="hover:text-gray-400" href="{{ '/' | relative_url }}">Home</a>
-      </li>
-      <li class="mx-4 block">
+      </div>
+      <div class="mx-4 block">
         <a class="hover:text-gray-400" href="{{ '/posts' | relative_url }}">Posts</a>
-      </li>
-      <li class="mx-4 block">
+      </div>
+      <div class="mx-4 block">
         <a class="hover:text-gray-400" href="{{ '/about' | relative_url }}">About</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div></div>
+      </div>
+    </div>
+  </div>
 </header>

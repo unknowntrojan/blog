@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="bg-zinc-800 m-auto p-4 mb-8 flex flex-row" markdown="0">
-  <p class="m-auto ml-16 whitespace-nowrap">
+<div class="bg-zinc-800 m-auto p-4 mb-8 flex flex-row justify-around" markdown="0">
+  <p class="hidden md:block m-auto whitespace-nowrap">
     <i class="fa-regular fa-calendar mr-1"></i>
     {{ data.date | date: "%-d %B %Y" }}
   </p>
   <h1 class="text-center mb-0 m-auto">{{ data.title }}</h1>
-  <p class="m-auto mr-16 whitespace-nowrap">
+  <p class="hidden md:block m-auto whitespace-nowrap">
     <i class="fa-regular fa-clock mr-1"></i>
     {{ content | reading_time }}
   </p>

@@ -3,24 +3,24 @@
   <head>
     {% render "head", metadata: site.metadata, title: data.title %}
   </head>
-  <body class="{{ data.layout }} {{ data.page_class }}">
-    <div class="flex flex-col h-screen justify-between">
-      <div class="top-0 sticky z-50">
+  <body class="{{ data.layout }} {{ data.page_class }} min-h-screen h-full">
+    <div class="flex flex-col h-full justify-between">
+      <div class="top-0 fixed right-0 left-0 z-50">
 	  	{% render "navbar", metadata: site.metadata, resource: resource %}
 	  </div>
 
-      <div class="flex flex-row mt-16 w-5/6 mx-auto mb-auto">
-        <div class="{% if data.toc %}toc-div sticky top-20 self-start {% else %} mt-0 p-4 {% endif %} w-1/4">
+      <div class="flex flex-row mt-20 md:w-10/12 w-11/12 mx-auto mb-20">
+        <div class="hidden md:block md:w-1/4 w-full {% if data.toc %}toc-div sticky top-20 self-start {% else %} mt-0 p-2 md:p-4 {% endif %}">
           {% if data.toc %}
             <h1>Contents</h1>
             {{ content | toc_only }}
           {% endif %}
         </div>
-        <main class="p-8 mt-0 mb-8 w-4/5">
+        <main class="md:p-8 p-2 mt-0 mb-8 md:w-4/5 w-full">
           {{ content }}
         </main>
 
-        <div class="w-1/4 mt-0 p-4"></div>
+        <div class="w-1/4 mt-0 p-4 hidden md:inline-block"></div>
       </div>
 
       {% render "footer", metadata: site.metadata %}
