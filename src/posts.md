@@ -11,7 +11,7 @@ title: Posts
 				<a href="{{ post.relative_url }}">
 					<h1 class="text-gray-100 mb-2">{{ post.data.title }}</h1>
 				</a>
-				<div class="grid grid-flow grid-cols-3 mb-0">
+				<div class="grid grid-flow grid-rows-3 mb-0">
 					<p class="mb-0">
 						<i class="fa-regular fa-calendar mr-1"></i>
 						{{ post.date | date: "%-d %B %Y" }}
