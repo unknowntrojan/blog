@@ -16,6 +16,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html {
+    color-scheme: dark;
+}
+
 @layer base {
   .nav-bar h2 {
     @apply text-2xl mb-0;
