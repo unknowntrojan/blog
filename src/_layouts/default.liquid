@@ -1,29 +1,34 @@
 <!doctype html>
 <html lang="{{ site.locale }}">
-  <head>
-    {% render "head", metadata: site.metadata, title: data.title, time: data.date, layout: data.layout %}
-  </head>
-  <body class="{{ data.layout }} {{ data.page_class }} min-h-screen h-full">
-    <div class="flex flex-col h-full justify-between">
-      <div class="top-0 fixed right-0 left-0 z-50">
-	  	{% render "navbar", metadata: site.metadata, resource: resource %}
-	  </div>
 
-      <div class="flex flex-row mt-20 md:w-10/12 w-11/12 mx-auto mb-20">
-        <div class="hidden md:block md:w-1/4 w-full {% if data.toc %}toc-div sticky top-20 self-start {% else %} mt-0 p-2 md:p-4 {% endif %}">
-          {% if data.toc %}
-            <h2 class="text-3xl mb-5 text-white">Contents</h2>
-            {{ content | toc_only }}
-          {% endif %}
-        </div>
-        <main class="md:p-8 p-2 mt-0 mb-8 md:w-4/5 w-full">
-          {{ content }}
-        </main>
+<head>
+	{% render "head", metadata: site.metadata, title: data.title, time: data.date, layout: data.layout %}
+</head>
 
-        <div class="w-1/4 mt-0 p-4 hidden md:inline-block"></div>
-      </div>
+<body class="{{ data.layout }} {{ data.page_class }} min-h-screen h-full flex">
+	<div class="h-full justify-between">
 
-      {% render "footer", metadata: site.metadata %}
-    </div>
-  </body>
+		<div class="top-0 fixed right-0 left-0 z-50">
+			{% render "navbar", metadata: site.metadata, resource: resource %}
+		</div>
+		{% render "footer", metadata: site.metadata %}
+		<div
+			class="flex flex-row mx-auto mb-auto mt-10 md:m-auto md:w-10/12 w-11/12 md:h-full pt-5 md:pt-20 md:pb-[7.5rem]">
+			<div
+				class="hidden md:block md:w-1/4 w-full {% if data.toc %}toc-div sticky top-20 self-start {% else %} mt-0 p-2 md:p-4 {% endif %}">
+				{% if data.toc %}
+				<h1>Contents</h1>
+				{{ content | toc_only }}
+				{% endif %}
+			</div>
+			<main class="md:p-8 p-2 my-auto md:w-4/5 w-full md:h-full">
+				{{ content }}
+			</main>
+
+			<div class="w-1/4 mt-0 p-4 hidden md:inline-block"></div>
+		</div>
+
+	</div>
+</body>
+
 </html>
