@@ -5,6 +5,7 @@
 @import "jit-refresh.css"; /* triggers frontend rebuilds */
 @import "fontawesome.css";
 @import "syntax-highlighting.css";
+@import "lite-youtube-embed";
 
 @import url("https://fonts.googleapis.com/css?family=Open Sans");
 

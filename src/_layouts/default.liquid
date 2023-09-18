@@ -12,7 +12,7 @@
       <div class="flex flex-row mt-20 md:w-10/12 w-11/12 mx-auto mb-20">
         <div class="hidden md:block md:w-1/4 w-full {% if data.toc %}toc-div sticky top-20 self-start {% else %} mt-0 p-2 md:p-4 {% endif %}">
           {% if data.toc %}
-            <h1>Contents</h1>
+            <h2 class="text-3xl mb-5 text-white">Contents</h2>
             {{ content | toc_only }}
           {% endif %}
         </div>
