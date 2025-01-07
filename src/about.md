@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-I'm **unknowntrojan**. I'm **20 years old**, go by **he/him** and spend my days with **RE**, **gamehacking** and **Rust**. You can find my **socials** at the **bottom of the page**.
+I'm **unknowntrojan**. I'm **21 years old**, go by **he/they** and spend my days with **RE**, **gamehacking** and **Rust**. You can find my **socials** at the **bottom of the page**.
 
 As a kid I was fascinated by Computers. So I got into programming as early as I could. I started with **C**, later **C++**, and then diversified my knowledge over time.
 
